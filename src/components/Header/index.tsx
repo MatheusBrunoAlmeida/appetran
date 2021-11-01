@@ -4,10 +4,14 @@ import { Text } from "react-native";
 
 import { Container, Title } from "./style";
 
-const Header: React.FC = () => {
+interface HeaderProps{
+    title: string
+}
+
+const Header: React.FC<HeaderProps> = ({title}) => {
     return(
         <Container>
-            <Title>Dashboard</Title>
+            <Title> {title} </Title>
         </Container>
     )
 }

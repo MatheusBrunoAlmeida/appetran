@@ -4,5 +4,6 @@
     "strict": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "noImplicitAny": false
   }
 }

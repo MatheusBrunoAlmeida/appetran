@@ -9,10 +9,11 @@ export const Container = styled.View`
   background: #F1DA61;
   justify-content: center;
   align-items: flex-end;
-  height: 100;
+  height: 90;
 `;
 
 export const Title = styled.Text`
-    font-size: 20;
+    font-size: 18;
     font-weight: 600;
+    padding-bottom: 15;
 `

@@ -1,15 +1,42 @@
 import React, { useState, useEffect } from 'react';
 
+import { View } from 'react-native';
+
+import Card from '../../components/Card';
 import Header from '../../components/Header';
 
-import { View } from 'react-native';
+import { ContainerCards, ContainerCardsRow } from './style';
+
+
 
 const Dashboard: React.FC = () => {
 
   return (
-    <>
-      <Header></Header>
-    </>
+    <View>
+      <Header 
+        title="Dashboard"
+      />
+
+      <ContainerCards>
+        <ContainerCardsRow> 
+          <Card></Card>
+
+          <Card></Card>
+        </ContainerCardsRow>
+
+        <ContainerCardsRow> 
+          <Card></Card>
+
+          <Card></Card>
+        </ContainerCardsRow>
+        
+        <ContainerCardsRow> 
+          <Card></Card>
+
+          <Card></Card>
+        </ContainerCardsRow>
+      </ContainerCards>
+    </View>
   );
 };
 
