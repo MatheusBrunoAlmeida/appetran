@@ -5,4 +5,6 @@ export const Container = styled.TouchableOpacity`
     width: 130;
     height: 130;
     border-radius: 10;
+    justify-content: center;
+    align-items: center;
 `

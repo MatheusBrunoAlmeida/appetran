@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-import { View } from 'react-native';
+import { View, Image } from 'react-native';
 
 import Card from '../../components/Card';
 import Header from '../../components/Header';
 
-import { ContainerCards, ContainerCardsRow } from './style';
+import carIcon from '../../../assets/car.png';
+
+import { ContainerCards, ContainerCardsRow, Icon, TitleCard } from './style';
 
 
 
@@ -19,21 +21,39 @@ const Dashboard: React.FC = () => {
 
       <ContainerCards>
         <ContainerCardsRow> 
-          <Card></Card>
+          <Card>
+            <Icon source={carIcon} />
+            <TitleCard>Veiculos</TitleCard>
+          </Card>
 
-          <Card></Card>
+          <Card>
+            <Icon source={carIcon} />
+            <TitleCard>Veiculos</TitleCard>
+          </Card>
         </ContainerCardsRow>
 
         <ContainerCardsRow> 
-          <Card></Card>
+          <Card>
+            <Icon source={carIcon} />
+            <TitleCard>Veiculos</TitleCard>
+          </Card>
 
-          <Card></Card>
+          <Card>
+            <Icon source={carIcon} />
+            <TitleCard>Veiculos</TitleCard>
+          </Card>
         </ContainerCardsRow>
         
         <ContainerCardsRow> 
-          <Card></Card>
+          <Card>
+            <Icon source={carIcon} />
+            <TitleCard>Veiculos</TitleCard>
+          </Card>
 
-          <Card></Card>
+          <Card>
+            <Icon source={carIcon} />
+            <TitleCard>Veiculos</TitleCard>
+          </Card>
         </ContainerCardsRow>
       </ContainerCards>
     </View>

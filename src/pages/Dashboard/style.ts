@@ -11,3 +11,11 @@ export const ContainerCardsRow = styled.View`
     justify-content: space-around;
     margin-top: 15%;
 `
+
+export const Icon = styled.Image`
+    margin-bottom: 5;
+`
+
+export const TitleCard = styled.Text`
+    color: #FFFFFF;
+`
