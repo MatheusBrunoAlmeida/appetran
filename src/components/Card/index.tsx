@@ -2,12 +2,27 @@ import React from "react";
 
 import { View, TouchableOpacity } from "react-native";
 
-import { Container } from "./style";
+import { Container, ContainerColumn, ImageCard, TextCard, TitleCard } from "./style";
 
+interface CardProps{
+    imageCard: any;
+    titleCard: string;
+    textCard: string;
+    children?: any;
+}
 
-const Card: React.FC = ({children}) =>{
+function Card({imageCard, titleCard, textCard, children}:CardProps){
     return(
         <Container>
+            <ImageCard
+                source={imageCard}
+            />
+            
+            <ContainerColumn>
+                <TitleCard> {titleCard} </TitleCard>
+                <TextCard> {textCard} </TextCard>
+            </ContainerColumn>
+
             {children}
         </Container>
     )

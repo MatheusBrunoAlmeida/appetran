@@ -5,9 +5,13 @@ import { View, Image } from 'react-native';
 import Card from '../../components/Card';
 import Header from '../../components/Header';
 
-import carIcon from '../../../assets/car.png';
-
 import { ContainerCards, ContainerCardsRow, Icon, TitleCard } from './style';
+
+import { StyleSheet } from 'react-native';
+
+import { ScrollView } from 'react-native-gesture-handler';
+
+import iconCar from '../../../assets/car.png'
 
 
 
@@ -16,48 +20,53 @@ const Dashboard: React.FC = () => {
   return (
     <View>
       <Header 
-        title="Dashboard"
+        title="Matheus Almeida"
       />
 
-      <ContainerCards>
-        <ContainerCardsRow> 
-          <Card>
-            <Icon source={carIcon} />
-            <TitleCard>Veiculos</TitleCard>
-          </Card>
+      <ScrollView
+        contentContainerStyle={styles.scrollView}>
+        <Card
+          imageCard={iconCar}
+          titleCard="Veiculos"
+          textCard="Consultar Veiculos"
+        />
 
-          <Card>
-            <Icon source={carIcon} />
-            <TitleCard>Veiculos</TitleCard>
-          </Card>
-        </ContainerCardsRow>
+        <Card
+          imageCard={iconCar}
+          titleCard="Veiculos"
+          textCard="Consultar Veiculos"
+        />
 
-        <ContainerCardsRow> 
-          <Card>
-            <Icon source={carIcon} />
-            <TitleCard>Veiculos</TitleCard>
-          </Card>
+        <Card
+          imageCard={iconCar}
+          titleCard="Veiculos"
+          textCard="Consultar Veiculos"
+        />
 
-          <Card>
-            <Icon source={carIcon} />
-            <TitleCard>Veiculos</TitleCard>
-          </Card>
-        </ContainerCardsRow>
+        <Card
+          imageCard={iconCar}
+          titleCard="Veiculos"
+          textCard="Consultar Veiculos"
+        />
         
-        <ContainerCardsRow> 
-          <Card>
-            <Icon source={carIcon} />
-            <TitleCard>Veiculos</TitleCard>
-          </Card>
+        <Card
+          imageCard={iconCar}
+          titleCard="Veiculos"
+          textCard="Consultar Veiculos"
+        />
 
-          <Card>
-            <Icon source={carIcon} />
-            <TitleCard>Veiculos</TitleCard>
-          </Card>
-        </ContainerCardsRow>
-      </ContainerCards>
+      </ScrollView>
     </View>
   );
 };
+
+
+const styles = StyleSheet.create({
+  scrollView: {
+    flexGrow: 1,
+    marginTop: '15%',
+    alignItems: 'center'
+  },
+});
 
 export default Dashboard;
