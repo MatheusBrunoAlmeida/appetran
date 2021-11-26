@@ -11,7 +11,7 @@ const Login: React.FC = () => {
     const route = useNavigation();
 
     function handleSignIn(){
-        route.navigate('Dashboard')
+        route.navigate('Dashboard');
     }
 
     return(

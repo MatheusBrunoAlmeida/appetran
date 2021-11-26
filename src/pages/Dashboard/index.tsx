@@ -26,8 +26,7 @@ const Dashboard: React.FC = () => {
   return (
     <View>
       <Header 
-        title="Bem-vindo"
-        userName="Matheus Almeida"
+        title="Dashboard"
       />
 
       <ScrollView
