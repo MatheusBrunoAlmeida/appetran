@@ -1,5 +1,7 @@
 import styled from "styled-components/native";
 
+import { colors } from "../../styles";
+
 export const Container = styled.View`
   margin-top: 20%;
   width: 100%;
@@ -18,13 +20,13 @@ export const Title = styled.Text`
     font-size: 18;
     font-weight: 600;
     padding-bottom: 1px;
-    color: #d1d1d1;
+    color: #F1DA61;
     font-family: 'Inter_900Black';
     margin-left: -3px;
 `
 
 export const UserName = styled.Text`
-  color: #d1d1d1;
+  color: ${colors.text};
   font-size: 13px;
   margin-top: 5px;
   margin-left: -2px;
@@ -35,5 +37,18 @@ export const ContainerImage = styled.TouchableOpacity`
   height: 40px;
   width: 40px;
   margin-right: 6%;
+  border-radius: 50px;
+`
+
+export const PageInfo = styled.Text`
+  color: ${colors.text};
+  font-size: 13px;
+  margin-top: 5px;
+  margin-left: -2px;
+`
+
+export const UserAvatar = styled.Image`
+  height: 40px;
+  width: 40px;
   border-radius: 50px;
 `

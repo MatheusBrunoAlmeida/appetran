@@ -23,7 +23,7 @@ export const ContainerColumn = styled.View`
 export const TitleCard = styled.Text`
     font-size: 16px;
     color: #d1d1d1;
-    font-family: 'Inter_900Black'
+    font-family: 'Montserrat_600SemiBold'
 `
 export const TextCard = styled.Text`
     font-size: 14px;

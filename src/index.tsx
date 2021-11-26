@@ -6,10 +6,13 @@ import AppLoading from 'expo-app-loading';
 import Routes from './routes';
 
 import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
+import { Montserrat_400Regular, Montserrat_600SemiBold } from '@expo-google-fonts/montserrat';
 
 export default function App(){
   let [fontsLoaded] = useFonts({
     Inter_900Black,
+    Montserrat_400Regular,
+    Montserrat_600SemiBold
   });
 
   if (!fontsLoaded) {

@@ -12,15 +12,22 @@ import { StyleSheet } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
 import iconCar from '../../../assets/car.png'
+import { useNavigation } from '@react-navigation/core';
 
 
 
 const Dashboard: React.FC = () => {
+  const route = useNavigation();
+
+  function handleNavigationVehicles(){
+    route.navigate('Vehicles');
+  }
 
   return (
     <View>
       <Header 
-        title="Matheus Almeida"
+        title="Bem-vindo"
+        userName="Matheus Almeida"
       />
 
       <ScrollView
@@ -29,6 +36,7 @@ const Dashboard: React.FC = () => {
           imageCard={iconCar}
           titleCard="Veiculos"
           textCard="Consultar Veiculos"
+          onPress={handleNavigationVehicles}
         />
 
         <Card

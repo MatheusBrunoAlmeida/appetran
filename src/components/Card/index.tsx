@@ -8,12 +8,15 @@ interface CardProps{
     imageCard: any;
     titleCard: string;
     textCard: string;
+    onPress?:any;
     children?: any;
 }
 
-function Card({imageCard, titleCard, textCard, children}:CardProps){
+function Card({imageCard, titleCard, textCard, onPress, children}:CardProps){
     return(
-        <Container>
+        <Container
+            onPress={onPress}
+        >
             <ImageCard
                 source={imageCard}
             />
