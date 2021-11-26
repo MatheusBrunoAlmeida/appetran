@@ -7,12 +7,14 @@ import Routes from './routes';
 
 import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
 import { Montserrat_400Regular, Montserrat_600SemiBold } from '@expo-google-fonts/montserrat';
+import { Abel_400Regular } from '@expo-google-fonts/abel';
 
 export default function App(){
   let [fontsLoaded] = useFonts({
     Inter_900Black,
     Montserrat_400Regular,
-    Montserrat_600SemiBold
+    Montserrat_600SemiBold,
+    Abel_400Regular
   });
 
   if (!fontsLoaded) {

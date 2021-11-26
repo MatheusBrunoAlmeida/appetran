@@ -1161,6 +1161,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
+"@expo-google-fonts/abel@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/abel/-/abel-0.2.0.tgz#836a2c72231430066e5c23fcdf6f36317cd9f982"
+  integrity sha512-57XzDE8SqTOOJgMtA1vMusXySfuWvBO5OkqSKTibJ6er/2mQhhy3b41lf7K+momFe+hauCvmV+r2bAB6qp07Wg==
+
 "@expo-google-fonts/inter@^0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@expo-google-fonts/inter/-/inter-0.2.0.tgz#2934c1e510d58b652e3a5150ca7f76f55b89e84a"

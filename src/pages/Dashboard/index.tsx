@@ -11,7 +11,7 @@ import { StyleSheet } from 'react-native';
 
 import { ScrollView } from 'react-native-gesture-handler';
 
-import iconCar from '../../../assets/car.png'
+import iconCar from '../../../assets/car.png';
 import { useNavigation } from '@react-navigation/core';
 
 

@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import Dashboard from '../pages/Dashboard';
 import Vehicles from '../pages/Vehicles';
+import Login from '../pages/Login';
 
 const App = createStackNavigator();
 
@@ -16,8 +17,16 @@ const AppRoutes: React.FC = () => (
         cardStyle: { backgroundColor: '#262626' },
         // cardStyle: { backgroundColor: '#ffffff' },
       }}
-      initialRouteName="Dashboard"
+      initialRouteName="LoginPage"
     >
+      <App.Screen 
+        options={{
+          headerShown:false,
+          headerTransparent: true
+        }}
+        name="LoginPage"
+        component={Login}
+      />
       <App.Screen
         options={{
           headerShown: false,
