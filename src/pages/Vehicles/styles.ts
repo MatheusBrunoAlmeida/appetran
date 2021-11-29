@@ -3,7 +3,7 @@ import styled from "styled-components/native";
 import { colors } from "../../styles";
 
 export const Label = styled.Text`
-    margin-top: 12%;
+    margin-top: 10%;
     margin-left: 1%;
     color: ${colors.text};
     font-size: 16px;

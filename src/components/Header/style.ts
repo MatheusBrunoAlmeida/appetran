@@ -19,6 +19,16 @@ export const Title = styled.Text`
   padding-bottom: 3%;
 `
 
+export const BackButton = styled.TouchableOpacity`
+  position: absolute;
+  left: 1%;
+  bottom: 13%;
+`
+
+export const BackIcon = styled.Image`
+
+`
+
 // export const ContainerColumn = styled.View`
 //   flex-direction: column;
 //   margin-left: 7%;

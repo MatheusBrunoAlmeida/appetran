@@ -5,17 +5,15 @@ import Header from "../../components/Header";
 
 import { ContainerRow, ContainerVehicleInfo, InputBoard, Label, SearchButton, SearchIcon, VehicleTitle } from "./styles";
 
-import userAvataer from '../../../assets/eu.jpeg';
 
 import searchIcon from '../../../assets/searchIcon.png'
 
 function Vehicles(){
     return(
-        <View>
+        <>
             <Header 
                 title="Veiculos"
-                pageInfo="Consultar veiculo por placa"
-                avatar={userAvataer}
+                backButton={true}
             />
 
             <Label>Digite a placa:</Label>
@@ -30,8 +28,8 @@ function Vehicles(){
 
             <ContainerVehicleInfo>
                 <VehicleTitle>HONDA/CG 125 TITAN KS</VehicleTitle>
-            </ContainerVehicleInfo>
-        </View>
+            </ContainerVehicleInfo> 
+        </>
     )
 }
 
