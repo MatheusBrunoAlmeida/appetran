@@ -22,7 +22,21 @@ export const InputText = styled.TextInput`
     width: 85%;
     background-color: #414141;
     /* padding: 10px; */
-    margin-bottom: 7%;
+    /* margin-bottom: 7%;
+     */
+    color: #ACACAC;
+    padding: 14px 0px 14px 19px;
+    border-radius: 6px;
+    font-family: 'Abel_400Regular';
+`
+
+export const InputTextPassword = styled.TextInput`
+    width: 85%;
+    background-color: #414141;
+    /* padding: 10px; */
+    /* margin-bottom: 7%;
+     */
+    margin-top: 7%;
     color: #ACACAC;
     padding: 14px 0px 14px 19px;
     border-radius: 6px;
@@ -41,4 +55,10 @@ export const ButtonSignIn = styled.TouchableOpacity`
 export const ButtonSignInText = styled.Text`
     font-size: 17px;
     font-family: 'Montserrat_400Regular';
+`
+
+export const ErrorMessage = styled.Text`
+    color: red;
+    margin-left: -48%;
+    margin-top: 1%;
 `

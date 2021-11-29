@@ -14,7 +14,7 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   font-size: 20px;
-  font-family: 'Montserrat_600Bold';
+  font-family: 'Montserrat_600SemiBold';
   font-weight: 700;
   padding-bottom: 3%;
 `
