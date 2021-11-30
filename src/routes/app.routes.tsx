@@ -8,6 +8,8 @@ import Vehicles from '../pages/Vehicles';
 import Login from '../pages/Login';
 import ScalePage from '../pages/Scale';
 import InfringementPage from '../pages/Infringement';
+import AutoByPeriod from '../pages/AutoByPeriod';
+import QueryTrafficLightsPage from '../pages/TrafficLights';
 
 const App = createStackNavigator();
 
@@ -64,6 +66,27 @@ const AppRoutes: React.FC = () => (
         name="InfringementPage"
         component={InfringementPage}
       />
+
+
+      <App.Screen
+        options={{
+          headerShown: false,
+          headerTransparent: true,
+        }}
+        name="AutoByPeriod"
+        component={AutoByPeriod}
+      />
+
+
+    <App.Screen
+        options={{
+          headerShown: false,
+          headerTransparent: true,
+        }}
+        name="QueryTrafficLightsPage"
+        component={QueryTrafficLightsPage}
+      />
+
 
     </App.Navigator>
   </NavigationContainer>

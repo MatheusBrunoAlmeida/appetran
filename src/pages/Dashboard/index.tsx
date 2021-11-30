@@ -16,6 +16,7 @@ import scaleIcon from '../../../assets/scale.png';
 import autoIcon from '../../../assets/auto.png'
 
 import { useNavigation } from '@react-navigation/core';
+import Footer from '../../components/Footer';
 
 
 
@@ -33,7 +34,8 @@ const Dashboard: React.FC = () => {
       />
 
       <ScrollView
-        contentContainerStyle={styles.scrollView}>
+        contentContainerStyle={styles.scrollView}
+      >
         <Card
           imageCard={iconCar}
           titleCard="Veiculos"
@@ -56,18 +58,22 @@ const Dashboard: React.FC = () => {
         />
 
         <Card
-          imageCard={iconCar}
-          titleCard="Veiculos"
-          textCard="Consultar Veiculos"
+          imageCard={autoIcon}
+          titleCard="Auto por período"
+          textCard="Consultar atuações por período"
+          onPress={()=>route.navigate('AutoByPeriod')}
         />
         
         <Card
           imageCard={iconCar}
-          titleCard="Veiculos"
-          textCard="Consultar Veiculos"
+          titleCard="Consulta Semáfros"
+          textCard="Relação de semáfros em Goiânia"
+          onPress={()=>route.navigate('QueryTrafficLightsPage')}
         />
 
       </ScrollView>
+
+      {/* <Footer /> */}
     </View>
   );
 };
