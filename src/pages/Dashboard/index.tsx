@@ -12,6 +12,9 @@ import { StyleSheet } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
 import iconCar from '../../../assets/car.png';
+import scaleIcon from '../../../assets/scale.png';
+import autoIcon from '../../../assets/auto.png'
+
 import { useNavigation } from '@react-navigation/core';
 
 
@@ -39,15 +42,17 @@ const Dashboard: React.FC = () => {
         />
 
         <Card
-          imageCard={iconCar}
-          titleCard="Veiculos"
-          textCard="Consultar Veiculos"
+          imageCard={scaleIcon}
+          titleCard="Escala"
+          textCard="Consultar escala por período"
+          onPress={()=>route.navigate('ScalePage')}
         />
 
         <Card
-          imageCard={iconCar}
-          titleCard="Veiculos"
-          textCard="Consultar Veiculos"
+          imageCard={autoIcon}
+          titleCard="Auto"
+          textCard="Consultar auto de infração"
+          onPress={()=>route.navigate('InfringementPage')}
         />
 
         <Card

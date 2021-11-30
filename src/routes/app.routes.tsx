@@ -6,6 +6,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import Dashboard from '../pages/Dashboard';
 import Vehicles from '../pages/Vehicles';
 import Login from '../pages/Login';
+import ScalePage from '../pages/Scale';
+import InfringementPage from '../pages/Infringement';
 
 const App = createStackNavigator();
 
@@ -36,7 +38,7 @@ const AppRoutes: React.FC = () => (
         component={Dashboard}
       />
 
-       <App.Screen
+      <App.Screen
         options={{
           headerShown: false,
           headerTransparent: true,
@@ -44,6 +46,25 @@ const AppRoutes: React.FC = () => (
         name="Vehicles"
         component={Vehicles}
       />
+
+      <App.Screen
+        options={{
+          headerShown: false,
+          headerTransparent: true,
+        }}
+        name="ScalePage"
+        component={ScalePage}
+      />
+
+      <App.Screen
+        options={{
+          headerShown: false,
+          headerTransparent: true,
+        }}
+        name="InfringementPage"
+        component={InfringementPage}
+      />
+
     </App.Navigator>
   </NavigationContainer>
 );

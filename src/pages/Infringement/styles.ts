@@ -37,8 +37,8 @@ export const SearchButton = styled.TouchableOpacity`
 export const SearchIcon = styled.Image`
 `
 
-export const ContainerVehicleInfo = styled.View`
-    margin-top: 10%;
+export const ContainerAutoInfo = styled.View`
+    margin-top: 5%;
     margin-left: 7%;
 `
 
@@ -64,11 +64,11 @@ export const InfoTitle = styled.Text`
     color: ${colors.title};
 `
 
-export const InfoText = styled.Text`
+export const InfoTextRed = styled.Text`
     font-size: 14px;
     margin-top: 1%;
     margin-left: 2%;
-    color: ${colors.textInfo};
+    color: red;
     max-width: 50%;
 `
 

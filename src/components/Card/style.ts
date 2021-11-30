@@ -13,6 +13,8 @@ export const Container = styled.TouchableOpacity`
 
 export const ImageCard = styled.Image`
     margin-left: 7%;
+    width: 40px;
+    height: 40px;
 `
 
 export const ContainerColumn = styled.View`
