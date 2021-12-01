@@ -21,7 +21,7 @@ export const ContainerRow = styled.View`
 export const ContainerRowAté = styled.View`
     flex-direction: row;
     align-items: flex-end;
-    margin-top: -12%;
+    margin-top: 7%;
 `
 
 export const Label = styled.Text`
@@ -39,7 +39,7 @@ export const CalendarIcon = styled.Image`
 `
 
 export const RegistrosContainer = styled.View`
-    margin-top: -16%;
+    margin-top: 2%;
 `
 
 export const RegistrosTitle = styled.Text`
@@ -50,4 +50,26 @@ export const RegistrosTitle = styled.Text`
     /* font-weight: bold; */
     margin-left: 7%;
     font-family: 'Montserrat_600SemiBold';
+`
+
+export const SearchButton = styled.TouchableOpacity`
+    background-color: ${colors.headerColor};
+    width: 20%;
+    margin-left: 7%;
+    margin-top: 5%;
+    padding: 5px;
+    align-items: center;
+    border-radius: 5px;
+`
+
+export const TextDate = styled.Text`
+    font-size: 12px;
+    font-family: 'Montserrat_600SemiBold';
+`
+
+export const ViewLoading = styled.View`
+    /* background-color: blue; */
+    height: 100px;
+    justify-content: center;
+    align-items: center;
 `

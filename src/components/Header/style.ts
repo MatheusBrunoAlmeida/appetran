@@ -1,10 +1,11 @@
+import { Platform } from "react-native";
 import styled from "styled-components/native";
 
 import { colors } from "../../styles";
 
 export const Container = styled.View`
   width: 100%;
-  height: 12%;
+  height: ${Platform.OS == 'android' ? '8%' : '12%'};
   flex-direction: row;
   align-items: flex-end;
   z-index: 10;
